@@ -1,0 +1,1163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>M K Poultry Farm | Sonali Chicks and Eggs
+    </title>
+    <meta name="description" content="Contact M K Poultry Farm in Chholas for Sonali chicks, bulk orders and availability.">
+
+    <style>
+        :root {
+            --green: #123d27;
+            --light-green: #236b43;
+            --gold: #f4bd50;
+            --cream: #fffaf0;
+            --text: #26352c;
+            --muted: #68756c;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            color: var(--text);
+            background: white;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, 91%);
+            margin: auto;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--green);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 18px #00000018;
+        }
+
+        .nav-inner {
+            min-height: 76px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .brand-icon {
+            background: var(--gold);
+            width: 43px;
+            height: 43px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 13px 21px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--green);
+        }
+
+        .btn-green {
+            background: var(--green);
+            color: white;
+        }
+
+        .btn-white {
+            border: 1px solid #ffffff80;
+            color: white;
+            background: #ffffff12;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 570px;
+            display: flex;
+            align-items: center;
+            color: white;
+            background:
+                linear-gradient(90deg, #082214e8, #082214a6, #08221438),
+                url("https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1600&q=85")
+                center/cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 710px;
+            padding: 85px 0;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--gold);
+            border: 1px solid #ffffff45;
+            background: #ffffff12;
+            border-radius: 30px;
+            padding: 6px 14px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            line-height: 1.12;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            max-width: 570px;
+            color: #edf2ed;
+            font-size: 17px;
+            margin-bottom: 27px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Sections */
+        section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto 38px;
+        }
+
+        .section-label {
+            color: var(--light-green);
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .section-heading h2 {
+            color: var(--green);
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.25;
+            margin: 10px 0;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .about-text h2 {
+            color: var(--green);
+            font-size: 34px;
+            line-height: 1.25;
+            margin: 10px 0 18px;
+        }
+
+        .about-text p {
+            color: var(--muted);
+            margin-bottom: 15px;
+        }
+
+        /* Product cards */
+        .products {
+            background: #f6f8f4;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 23px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e8eee6;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px #0000000d;
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Order form */
+        .order-section {
+            background: var(--cream);
+        }
+
+        .order-layout {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 35px;
+            align-items: start;
+        }
+
+        .order-info {
+            background: var(--green);
+            color: white;
+            padding: 32px;
+            border-radius: 17px;
+        }
+
+        .order-info h3 {
+            color: var(--gold);
+            font-size: 25px;
+            margin-bottom: 14px;
+        }
+
+        .order-info p {
+            color: #e2eae3;
+            margin-bottom: 18px;
+        }
+
+        .order-info ul {
+            list-style: none;
+        }
+
+        .order-info li {
+            margin: 12px 0;
+        }
+
+        .order-form {
+            background: white;
+            padding: 30px;
+            border-radius: 17px;
+            border: 1px solid #eee9dc;
+            box-shadow: 0 8px 25px #00000008;
+        }
+
+        .order-form h3 {
+            color: var(--green);
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .form-intro {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 23px;
+        }
+
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 13px;
+            border: 1px solid #d7ded7;
+            border-radius: 8px;
+            outline: none;
+            font-size: 15px;
+            background: white;
+            color: var(--text);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--light-green);
+            box-shadow: 0 0 0 3px #236b4315;
+        }
+
+        .form-group textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .order-form .btn {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .form-note {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 12px;
+        }
+
+        /* Google Maps */
+        .location-section {
+            background: white;
+        }
+
+        .location-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .location-details {
+            padding: 30px;
+            background: #f6f8f4;
+            border-radius: 15px;
+        }
+
+        .location-details h3 {
+            color: var(--green);
+            font-size: 25px;
+            margin-bottom: 14px;
+        }
+
+        .location-details p {
+            color: var(--muted);
+            margin-bottom: 14px;
+        }
+
+        .map-frame {
+            width: 100%;
+            min-height: 320px;
+            border: 0;
+            border-radius: 15px;
+        }
+
+        /* Reviews */
+        .reviews-section {
+            background: #f6f8f4;
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 25px;
+            border: 1px solid #e5ebe3;
+            border-radius: 14px;
+        }
+
+        .review-stars {
+            color: #d99512;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .review-card h3 {
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+
+        .review-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .review-action {
+            margin-top: 30px;
+            text-align: center;
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #e5ebe3;
+        }
+
+        .review-action h3 {
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+
+        .review-action p {
+            color: var(--muted);
+            margin-bottom: 17px;
+        }
+
+        /* Contact */
+        .contact-section {
+            background: var(--green);
+            color: white;
+        }
+
+        .contact-section .section-label {
+            color: var(--gold);
+        }
+
+        .contact-section .section-heading h2 {
+            color: white;
+        }
+
+        .contact-section .section-heading p {
+            color: #d9e5dc;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .contact-card {
+            padding: 28px;
+            border: 1px solid #ffffff35;
+            border-radius: 14px;
+            background: #ffffff0b;
+        }
+
+        .contact-card h3 {
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            color: #e7eee8;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a:not(.btn) {
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: #0b2a1a;
+            color: #d9e3dc;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: var(--gold);
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 56px;
+            height: 56px;
+            display: grid;
+            place-items: center;
+            background: #25d366;
+            color: white;
+            border-radius: 50%;
+            font-size: 27px;
+            z-index: 999;
+            box-shadow: 0 4px 15px #00000030;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+            .nav-inner {
+                flex-direction: column;
+                padding: 14px 0;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 13px;
+            }
+
+            .about-grid,
+            .order-layout,
+            .location-box {
+                grid-template-columns: 1fr;
+            }
+
+            .cards,
+            .review-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                min-height: 510px;
+                background-position: 60% center;
+            }
+        }
+
+        @media (max-width: 520px) {
+            section {
+                padding: 55px 0;
+            }
+
+            .cards,
+            .review-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .order-form,
+            .order-info {
+                padding: 22px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .map-frame {
+                min-height: 270px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#home" class="brand">
+                <span class="brand-icon">🐔</span>
+                <span>M K Poultry Farm</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#chicks">Chicks</a>
+                <a href="#order">Order</a>
+                <a href="#location">Location</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">WELCOME TO OUR FARM</span>
+
+                <h1>
+                    Quality Chicks.<br>
+                    <span>Better Farming.</span>
+                </h1>
+
+                <p>
+                    Looking for Sonali chicks?
+                    Contact M K Poultry Farm in Chholas
+                    to check availability, prices and bulk orders.
+                </p>
+
+                <div class="buttons">
+                    <a href="#chicks" class="btn btn-gold">
+                        🐥 Explore Chicks
+                    </a>
+
+                    <a href="#order" class="btn btn-white">
+                        Place an Enquiry →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container about-grid">
+
+            <div>
+                <img
+                    class="about-image"
+                    src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1000&q=80"
+                    alt="Poultry farm">
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">About Our Farm</span>
+
+                <h2>Your Local Partner for Sonali Chicks</h2>
+
+                <p>
+                    Welcome to M K Poultry Farm, located in
+                    Chholas near Kutti Wali Mandir, Uttar Pradesh.
+                </p>
+
+                <p>
+                    Contact us to enquire about available chicks,
+                    their age, current prices and order quantities.
+                </p>
+
+                <a href="#contact" class="btn btn-gold">
+                    Contact Our Farm →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chicks -->
+    <section class="products" id="chicks">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Our Products</span>
+                <h2>Explore Our Chicks</h2>
+                <p>Ask us about current availability and prices.</p>
+            </div>
+
+            <div class="cards">
+
+                <article class="card">
+                    <img
+                        src="c:\Users\mkaif\OneDrive\Pictures\Camera Roll\PddOt1V2c2f3gKWcE1p5Y_lp-KfvwkSai-Hx8n7AuL8NYrT4TTN2r1NrNWYVDkJb6Yy7-IAJ7MLkvAMQ7EGLObdzcULxFLMO-3lmYvl3rt8i_QEOhtzTJ5axER3zml6AD1x0pole0JnXlEpoVbo4JJN0jutgfk15UxBX0QoH3x9q3uKBpDs0UY2NkBSmkyeQ.jpeg"
+                        alt="Poultry chickens"
+                        loading="lazy">
+
+                    <div class="card-body">
+                        <h3>🐔 Sonali Chicks</h3>
+                        <p>Enquire about Sonali chick availability and rates.</p>
+                        <a href="#order" class="btn btn-green">Enquire Now</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="c:\Users\mkaif\OneDrive\Pictures\Camera Roll\gCppDXWPw_sxOg98SxoK8Zh3PbzN8bpLK3uxMId4Im5hIIWUE-uWsPqFjiLg1tL97spRYH21heZ1bWcJKmpOeShcHU_0LxA4vIVBphIzCQw8BBixW9CtOfKqDKlxQhSJevJd0SrLmZXpv_e7Cih0MVg120bDtxq5SGJkDEFWV_ONS44S-M_KbCVyyHwPO_78.jpeg"
+                        alt="Poultry birds"
+                        loading="lazy">
+
+                    <div class="card-body">
+                        <h3>🐥 Chick Availability</h3>
+                        <p>Contact us to confirm stock before visiting.</p>
+                        <a href="#order" class="btn btn-green">Check Stock</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="c:\Users\mkaif\Downloads\chicks photo.jpeg"
+                        alt="Farm landscape"
+                        loading="lazy">
+
+                    <div class="card-body">
+                        <h3>📦 Bulk Orders</h3>
+                        <p>Tell us how many chicks you need for your farm.</p>
+                        <a href="#order" class="btn btn-green">Bulk Enquiry</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Order Form -->
+    <section class="order-section" id="order">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Easy Ordering</span>
+                <h2>Sonali Chicks Order Enquiry</h2>
+                <p>
+                    Fill in the details below. Your enquiry will
+                    open in WhatsApp so you can send it to us.
+                </p>
+            </div>
+
+            <div class="order-layout">
+
+                <div class="order-info">
+                    <h3>🐥 Need Chicks?</h3>
+
+                    <p>
+                        Send us your requirements to ask about
+                        stock, prices and collection arrangements.
+                    </p>
+
+                    <ul>
+                        <li>✓ Choose chick age</li>
+                        <li>✓ Enter required quantity</li>
+                        <li>✓ Add your contact details</li>
+                        <li>✓ Send your enquiry through WhatsApp</li>
+                    </ul>
+                </div>
+
+                <form class="order-form" id="orderForm">
+                    <h3>Place Your Enquiry</h3>
+
+                    <p class="form-intro">
+                        Fields marked * are required.
+                    </p>
+
+                    <div class="form-group">
+                        <label for="customerName">Your Name *</label>
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your name"
+                            maxlength="80"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Your Mobile Number *</label>
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="Enter your 10-digit mobile number"
+                            inputmode="numeric"
+                            pattern="[6-9][0-9]{9}"
+                            maxlength="10"
+                            required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="chickAge">Chick Age *</label>
+                            <select id="chickAge" required>
+                                <option value="">Select age</option>
+                                <option value="1 day">1 day</option>
+                                <option value="7 days">7 days</option>
+                                <option value="15 days">15 days</option>
+                                <option value="1 month">1 month</option>
+                                <option value="Other / Please discuss">
+                                    Other / Please discuss
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input
+                                type="number"
+                                id="quantity"
+                                min="1"
+                                max="100000"
+                                step="1"
+                                placeholder="e.g. 100"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderNotes">Additional Details</label>
+                        <textarea
+                            id="orderNotes"
+                            maxlength="500"
+                            placeholder="Your village, delivery requirements or questions (optional)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-green">
+                        📲 Send Enquiry on WhatsApp
+                    </button>
+
+                    <p class="form-note">
+                        This form does not take payment or automatically
+                        confirm an order. Please send the message in
+                        WhatsApp and confirm availability with the farm.
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section class="location-section" id="location">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Find Our Farm</span>
+                <h2>Visit M K Poultry Farm</h2>
+                <p>
+                    Chholas, near Kutti Wali Mandir,
+                    Uttar Pradesh.
+                </p>
+            </div>
+
+            <div class="location-box">
+
+                <div class="location-details">
+                    <h3>📍 Our Location</h3>
+
+                    <p>
+                        <strong>Farm Name:</strong><br>
+                        M K Poultry Farm
+                    </p>
+
+                    <p>
+                        <strong>Address:</strong><br>
+                        Chholas, Kutti Wali Mandir ke paas,
+                        Uttar Pradesh, India
+                    </p>
+
+                    <p>
+                        Need directions? Open Google Maps to search
+                        for our farm and nearby landmarks.
+                    </p>
+
+                    <a
+                        class="btn btn-green"
+                        href="https://www.google.com/maps/dir/?api=1&destination=M%20K%20Poultry%20Farm%2C%20Chholas%2C%20near%20Kutti%20Wali%20Mandir%2C%20Uttar%20Pradesh%2C%20India"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        🗺️ Get Directions
+                    </a>
+                </div>
+
+                <iframe
+                    class="map-frame"
+                    title="Map showing Chholas near Kutti Wali Mandir"
+                    src="https://maps.google.com/maps?q=Kutti%20Wali%20Mandir%2C%20Chholas%2C%20Uttar%20Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <p style="text-align:center;color:#68756c;font-size:13px;margin-top:16px">
+                Note: The map shows the searched area, not necessarily
+                your exact farm entrance. Verify the pin before publishing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Customer Feedback</span>
+                <h2>Customer Reviews</h2>
+                <p>
+                    We value feedback from our customers.
+                    Genuine customer reviews can help new visitors
+                    learn about their experience with our farm.
+                </p>
+            </div>
+
+            <div class="review-grid">
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>Share Your Experience</h3>
+                    <p>
+                        Have you purchased chicks from our farm?
+                        Share your genuine experience with other customers.
+                    </p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>Your Feedback Matters</h3>
+                    <p>
+                        Tell us what went well and what we can improve
+                        in our customer service.
+                    </p>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <h3>Help Other Farmers</h3>
+                    <p>
+                        Honest feedback helps other poultry farmers
+                        make informed decisions.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="review-action">
+                <h3>Purchased From M K Poultry Farm?</h3>
+
+                <p>
+                    Leave an honest review on Google if you have
+                    genuinely visited or purchased from our farm.
+                </p>
+
+                <a
+                    class="btn btn-green"
+                    href="https://www.google.com/maps/search/?api=1&query=M%20K%20Poultry%20Farm%2C%20Chholas%2C%20Uttar%20Pradesh"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    ⭐ Find Our Farm on Google Maps
+                </a>
+
+                <p style="font-size:12px;margin-top:13px">
+                    This button opens a Google Maps search. Find your
+                    verified business listing there to leave a review.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">Get in Touch</span>
+                <h2>Contact M K Poultry Farm</h2>
+                <p>
+                    Contact us for chick availability, rates and orders.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <h3>📍 Farm Address</h3>
+
+                    <p><strong>M K Poultry Farm</strong></p>
+
+                    <p>
+                        Chholas, near Kutti Wali Mandir,
+                        Uttar Pradesh, India
+                    </p>
+
+                    <a
+                        class="btn btn-white"
+                        href="#location">
+                        View Location
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📞 Call or WhatsApp</h3>
+
+                    <p>
+                        <strong>Phone:</strong>
+                        <a href="tel:+919811276033">9811276033</a>
+                    </p>
+
+                    <p>Message us to enquire about chicks and orders.</p>
+
+                    <a
+                        class="btn btn-gold"
+                        href="https://wa.me/919811276033"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Message on WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                © <span id="year">2026</span>
+                <strong>M K Poultry Farm</strong>.
+                All Rights Reserved.
+            </p>
+
+            <p>Chholas, Uttar Pradesh, India 🐔</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/919811276033"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact us on WhatsApp">
+        ☎
+    </a>
+
+    <script>
+        // Automatically update copyright year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        // WhatsApp order enquiry
+        document.getElementById("orderForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                const name =
+                    document.getElementById("customerName").value.trim();
+
+                const phone =
+                    document.getElementById("customerPhone").value.trim();
+
+                const age =
+                    document.getElementById("chickAge").value;
+
+                const quantity =
+                    document.getElementById("quantity").value;
+
+                const notes =
+                    document.getElementById("orderNotes").value.trim();
+
+                if (!this.reportValidity()) {
+                    return;
+                }
+
+                if (!/^[6-9][0-9]{9}$/.test(phone)) {
+                    alert("Please enter a valid 10-digit mobile number.");
+                    return;
+                }
+
+                const message =
+                    "Hello M K Poultry Farm!\n\n" +
+                    "I want to enquire about Sonali chicks.\n\n" +
+                    "Name: " + name + "\n" +
+                    "Customer Mobile: " + phone + "\n" +
+                    "Chick Age: " + age + "\n" +
+                    "Required Quantity: " + quantity + "\n" +
+                    "Additional Details: " + (notes || "Not provided") +
+                    "\n\nPlease confirm availability and price.";
+
+                const whatsappNumber = "919811276033";
+
+                const whatsappURL =
+                    "https://wa.me/" + whatsappNumber +
+                    "?text=" + encodeURIComponent(message);
+
+                window.open(whatsappURL, "_blank");
+            }
+        );
+    </script>
+
+</body>
+</html>
